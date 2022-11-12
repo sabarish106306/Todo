@@ -1,0 +1,147 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+.todoContainer {
+    width: 100%;
+    height: 100vh;
+}
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+.todoList {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 360px;
+  height: 500px;
+  background: #ec524b;
+  border-radius: 10px;
+  box-shadow: 0 7px 30px rgba(75, 70, 6, 0.3);
+}
+.cover-img .cover-inner {
+  height: 120px;
+  background-size: cover;
+  background-position: 10%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: relative;
+}
+.cover-img .cover-inner::after {
+  background: rgba(0, 0, 0, 0.3);
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.cover-img h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Nunito", sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  z-index: 10;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 700;
+}
+.content {
+  padding: 10px 20px;
+}
+.content form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding: 0 10px 0 5px;
+  border-bottom: 1px solid #cccccc;
+}
+.content form > * {
+  background: transparent;
+  border: none;
+  height: 35px;
+}
+
+.content input[type=text] {
+  padding: 0 5px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #fff;
+  outline: none;
+}
+.content input-buttons a {
+  text-decoration: none;
+}
+.content ul .todos {
+  margin-left: 0;
+  padding: 0;
+  letter-spacing: none;
+  height: 220px;
+  overflow: auto;
+  cursor: pointer;
+}
+.todos li i {
+  cursor: pointer;
+}
+.align {
+  padding: 0;
+}
+/* .content li {
+  user-select: none;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+} */
+
+.plus-icon {
+  color: #fff;
+} 
+.todoList_li{
+  padding: 5px 20px;
+  border-radius: 10px;
+  color: white;
+  list-style-type: none;
+  padding: 10px;
+
+}
+
+
+ label {
+    color: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 5px;
+  }
+
+
+  .todoList_li .checkbox{
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid white;
+  }
+  .check{
+   background-color: blue;
+  }
+  .deleteIcon{
+    float: right;
+    padding-right: 20px;
+  }
+
+  .selected_li{
+    background-color: #f16962;
+  }
